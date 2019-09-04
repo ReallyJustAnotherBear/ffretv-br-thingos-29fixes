@@ -5,7 +5,7 @@
 ################################################################################
 
 FFRETV_VERSION = 31-preKF1
-FFRETV_SOURCE = ffretv-$(FFRETV_VERSION).tar.xz
+FFRETV_SOURCE = ffretv-$(FFRETV_VERSION).tar.gz
 FFRETV_SITE = https://github.com/kelsieflynn/ffretv
 FFRETV_INSTALL_STAGING = YES
 
