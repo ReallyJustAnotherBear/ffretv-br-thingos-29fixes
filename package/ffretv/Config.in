@@ -41,10 +41,10 @@ config BR2_PACKAGE_FFRETV_NONFREE
 	  will be unredistributable
 
 config BR2_PACKAGE_FFRETV_FFRETV
-	bool "Build ffretv (the command line application)"
+	bool "Build ffmpeg (the command line application)"
 	default y
 	help
-	  ffretv is a very fast video and audio converter.
+	  ffmpeg is a very fast video and audio converter.
 	  It can also grab from a live audio/video source.
 
 	  It is not needed if you want to link the ffretv libraries
