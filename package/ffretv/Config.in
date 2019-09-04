@@ -23,7 +23,6 @@ menuconfig BR2_PACKAGE_FFRETV
 	help
 	   ffretv focuses on free tv or over the air tv support such as ATSC.
 
-	  https://github.com/kelsieflynn/ffretv
 
 if BR2_PACKAGE_FFRETV
 
@@ -46,8 +45,6 @@ config BR2_PACKAGE_FFRETV_FFRETV
 	  ffmpeg is a very fast video and audio converter.
 	  It can also grab from a live audio/video source.
 
-	  It is not needed if you want to link the ffretv libraries
-	  to your application.
 
 config BR2_PACKAGE_FFRETV_FFPLAY
 	bool "Build ffplay"
