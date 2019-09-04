@@ -6,7 +6,7 @@
 
 FFRETV_VERSION = 31-preKF1
 FFRETV_SOURCE = ffretv-$(FFRETV_VERSION).tar.gz
-FFRETV_SITE = https://github.com/kelsieflynn/ffretv
+FFRETV_SITE = https://github.com/kelsieflynn/ffretv/releases
 FFRETV_INSTALL_STAGING = YES
 
 FFRETV_LICENSE = LGPL-2.1+, libjpeg license
