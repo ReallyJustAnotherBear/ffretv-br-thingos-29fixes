@@ -20,6 +20,7 @@ endif
 
 FFRETV_CONF_OPTS = \
 	--prefix=/usr \
+#qmake=
 	--compile-type=release
 
 FFRETV_DEPENDENCIES += host-pkgconf
@@ -234,7 +235,7 @@ endif
 #endif
 
 ifeq ($(BR2_PACKAGE_RPI_USERLAND),y)
-FFRETV_CONF_OPTS += --enable-omx --enable-omx-rpi \
+FFRETV_CONF_OPTS += --enable-omx-rpi \
 	--extra-cflags=-I$(STAGING_DIR)/usr/include/IL
 FFRETV_DEPENDENCIES += rpi-userland
 else
