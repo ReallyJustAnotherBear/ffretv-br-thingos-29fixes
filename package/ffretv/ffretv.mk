@@ -18,43 +18,8 @@ endif
 
 FFRETV_CONF_OPTS = \
 	--prefix=/usr \
-	--enable-avfilter \
-	--disable-version3 \
-	--enable-logging \
-	--enable-optimizations \
-	--disable-extra-warnings \
-	--enable-avdevice \
-	--enable-avcodec \
-	--enable-avformat \
-	--enable-network \
-	--disable-gray \
-	--enable-swscale-alpha \
-	--disable-small \
-	--enable-dct \
-	--enable-fft \
-	--enable-mdct \
-	--enable-rdft \
-	--disable-crystalhd \
-	--disable-dxva2 \
-	--enable-runtime-cpudetect \
-	--disable-hardcoded-tables \
-	--disable-mipsdsp \
-	--disable-mipsdspr2 \
-	--disable-msa \
-	--enable-hwaccels \
-	--disable-cuda \
-	--disable-cuvid \
-	--disable-nvenc \
-	--disable-avisynth \
-	--disable-frei0r \
-	--disable-libopencore-amrnb \
-	--disable-libopencore-amrwb \
-	--disable-libdc1394 \
-	--disable-libgsm \
-	--disable-libilbc \
-	--disable-libvo-amrwbenc \
-	--disable-symver \
-	--disable-doc
+	--disable-runtime-cpudetect \
+	--compile-type=release
 
 FFRETV_DEPENDENCIES += host-pkgconf
 

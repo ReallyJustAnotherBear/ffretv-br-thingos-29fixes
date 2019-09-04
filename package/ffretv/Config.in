@@ -21,10 +21,9 @@ menuconfig BR2_PACKAGE_FFRETV
 	bool "ffretv"
 	depends on BR2_PACKAGE_FFRETV_ARCH_SUPPORTS
 	help
-	  ffretv is a complete, cross-platform solution to record,
-	  convert and stream audio and video.
+	   ffretv focuses on free tv or over the air tv support such as ATSC.
 
-	  http://www.ffretv.org
+	  https://github.com/kelsieflynn/ffretv
 
 if BR2_PACKAGE_FFRETV
 
