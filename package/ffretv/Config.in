@@ -1,0 +1,189 @@
+config BR2_PACKAGE_FFRETV_ARCH_SUPPORTS
+	bool
+	default y
+	# fenv.h lacks FE_INVALID, FE_OVERFLOW & FE_UNDERFLOW
+	depends on !(BR2_archs38 && BR2_TOOLCHAIN_USES_GLIBC)
+	# fenv.h lacks FE_INVALID, FE_OVERFLOW & FE_UNDERFLOW on nios2
+	depends on !BR2_nios2
+	# No support for ARMv7-M in the ARM assembly logic
+	depends on !BR2_ARM_CPU_ARMV7M
+	# Microblaze build affected by gcc PR71124 (infinite loop)
+	depends on !BR2_microblaze
+	# m68k coldfire causes a build failure, because the check for
+	# atomics (atomic_store) succeeds, which causes ffretv to
+	# think atomic intrinsics are available, while they are
+	# not. See https://patchwork.ozlabs.org/patch/756664/ and
+	# https://gcc.gnu.org/bugzilla/show_bug.cgi?id=68467 for more
+	# details.
+	depends on !BR2_m68k_cf
+
+menuconfig BR2_PACKAGE_FFRETV
+	bool "ffretv"
+	depends on BR2_PACKAGE_FFRETV_ARCH_SUPPORTS
+	help
+	  ffretv is a complete, cross-platform solution to record,
+	  convert and stream audio and video.
+
+	  http://www.ffretv.org
+
+if BR2_PACKAGE_FFRETV
+
+config BR2_PACKAGE_FFRETV_GPL
+	bool "Enable GPL code"
+	help
+	  allow use of GPL code, the resulting libs and binaries will
+	  be under GPL
+
+config BR2_PACKAGE_FFRETV_NONFREE
+	bool "Enable nonfree code"
+	help
+	  allow use of nonfree code, the resulting libs and binaries
+	  will be unredistributable
+
+config BR2_PACKAGE_FFRETV_FFRETV
+	bool "Build ffretv (the command line application)"
+	default y
+	help
+	  ffretv is a very fast video and audio converter.
+	  It can also grab from a live audio/video source.
+
+	  It is not needed if you want to link the ffretv libraries
+	  to your application.
+
+config BR2_PACKAGE_FFRETV_FFPLAY
+	bool "Build ffplay"
+	depends on !BR2_STATIC_LIBS # sdl2
+	select BR2_PACKAGE_FFRETV_SWSCALE
+	select BR2_PACKAGE_SDL2
+	help
+	  FFplay is a very simple and portable media player using the
+	  ffretv libraries and the SDL library.
+	  It is mostly used as a testbed for the various ffretv APIs.
+
+comment "ffplay needs a toolchain w/ dynamic library"
+	depends on BR2_STATIC_LIBS
+
+config BR2_PACKAGE_FFRETV_FFSERVER
+	bool "Build ffserver"
+	depends on BR2_USE_MMU # fork()
+	help
+	  FFserver is a streaming server for both audio and video.
+
+config BR2_PACKAGE_FFRETV_FFPROBE
+	bool "Build ffprobe"
+	help
+	  FFprobe is a utility to determine the audio and video
+	  characteristics of a container file.
+
+config BR2_PACKAGE_FFRETV_AVRESAMPLE
+	bool "Build libavresample"
+	help
+	  Avresample is a audio conversion library for compatibility.
+
+config BR2_PACKAGE_FFRETV_POSTPROC
+	bool "Build libpostproc"
+	depends on BR2_PACKAGE_FFRETV_GPL
+	help
+	  Postproc is a library of video postprocessing routines.
+
+config BR2_PACKAGE_FFRETV_SWSCALE
+	bool "Build libswscale"
+	help
+	  Swscale is a library of video scaling routines.
+
+config BR2_PACKAGE_FFRETV_ENCODERS
+	string "Enabled encoders"
+	default "all"
+	help
+	  Space-separated list of encoders to build in ffretv,
+	  or "all" to build all of them.
+
+	  Run ./configure --list-encoders in the ffretv sources
+	  directory to know the available options.
+
+config BR2_PACKAGE_FFRETV_DECODERS
+	string "Enabled decoders"
+	default "all"
+	help
+	  Space-separated list of decoders to build in ffretv,
+	  or "all" to build all of them.
+
+	  Run ./configure --list-decoders in the ffretv sources
+	  directory to know the available options.
+
+config BR2_PACKAGE_FFRETV_MUXERS
+	string "Enabled muxers"
+	default "all"
+	help
+	  Space-separated list of muxers to build in ffretv,
+	  or "all" to build all of them.
+
+	  Run ./configure --list-muxers in the ffretv sources
+	  directory to know the available options.
+
+config BR2_PACKAGE_FFRETV_DEMUXERS
+	string "Enabled demuxers"
+	default "all"
+	help
+	  Space-separated list of demuxers to build in ffretv,
+	  or "all" to build all of them.
+
+	  Run ./configure --list-demuxers in the ffretv sources
+	  directory to know the available options.
+
+config BR2_PACKAGE_FFRETV_PARSERS
+	string "Enabled parsers"
+	default "all"
+	help
+	  Space-separated list of parsers to build in ffretv,
+	  or "all" to build all of them.
+
+	  Run ./configure --list-parsers in the ffretv sources
+	  directory to know the available options.
+
+config BR2_PACKAGE_FFRETV_BSFS
+	string "Enabled bitstreams"
+	default "all"
+	help
+	  Space-separated list of bitstream filters to build in ffretv,
+	  or "all" to build all of them.
+
+	  Run ./configure --list-bsfs in the ffretv sources
+	  directory to know the available options.
+
+config BR2_PACKAGE_FFRETV_PROTOCOLS
+	string "Enabled protocols"
+	default "all"
+	help
+	  Space-separated list of protocols to build in ffretv,
+	  or "all" to build all of them.
+
+	  Run ./configure --list-protocols in the ffretv sources
+	  directory to know the available options.
+
+config BR2_PACKAGE_FFRETV_FILTERS
+	string "Enabled filters"
+	default "all"
+	help
+	  Space-separated list of filters to build in ffretv,
+	  or "all" to build all of them.
+
+	  Run ./configure --list-filters in the ffretv sources
+	  directory to know the available options.
+
+config BR2_PACKAGE_FFRETV_INDEVS
+	bool "Enable input devices"
+	default y
+
+config BR2_PACKAGE_FFRETV_OUTDEVS
+	bool "Enable output devices"
+	default y
+
+config BR2_PACKAGE_FFRETV_EXTRACONF
+	string "Additional parameters for ./configure"
+	default ""
+	help
+	  Extra parameters that will be appended to ffretv's
+	  ./configure commandline.
+
+endif
