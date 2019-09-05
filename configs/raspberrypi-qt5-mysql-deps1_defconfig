@@ -1,3 +1,21 @@
+#
+# Automatically generated file; DO NOT EDIT.
+# Buildroot 2019.02.2-g1045b95f91 Configuration
+#
+BR2_HAVE_DOT_CONFIG=y
+BR2_HOST_GCC_AT_LEAST_4_5=y
+BR2_HOST_GCC_AT_LEAST_4_6=y
+BR2_HOST_GCC_AT_LEAST_4_7=y
+BR2_HOST_GCC_AT_LEAST_4_8=y
+BR2_HOST_GCC_AT_LEAST_4_9=y
+BR2_HOST_GCC_AT_LEAST_5=y
+BR2_HOST_GCC_AT_LEAST_6=y
+BR2_HOST_GCC_AT_LEAST_7=y
+BR2_HOST_GCC_AT_LEAST_8=y
+
+#
+# Target options
+#
 BR2_ARCH_HAS_MMU_OPTIONAL=y
 # BR2_arcle is not set
 # BR2_arceb is not set
