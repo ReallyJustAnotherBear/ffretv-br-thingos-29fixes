@@ -1,4 +1,4 @@
-OS_NAME="thingOS"
-OS_SHORT_NAME="thingos"
-OS_PREFIX="thing"
-OS_VERSION="unknown"
+OS_NAME="mythingOS"
+OS_SHORT_NAME="mythingos"
+OS_PREFIX="mything"
+OS_VERSION="qt5-arm6"
