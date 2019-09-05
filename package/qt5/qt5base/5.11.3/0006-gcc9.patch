@@ -1,31 +1,25 @@
 From  Mon Sep 01 00:00:00 2000
 From:  < >
-Date: Thu, 17 Nov 2016 00:00:00 -0800
+Date: Wed, 04 Sep 2019 00:00:00 -0800
 Subject: [PATCH] gcc9: qrandom.cpp
 
 Update typedef for gcc9
 
-Change-Id: If38151d1fa6f40a80274acc26d9ed6b4ac6049fe
-https://codereview.qt-project.org/c/qt/qtbase/+/245425/3/src/corelib/global/qrandom.cpp
+ Upstream: Change-Id: If38151d1fa6f40a80274acc26d9ed6b4ac6049fe
+ Upstream: https://codereview.qt-project.org/c/qt/qtbase/+/245425/3/src/corelib/global/qrandom.cpp
 
-[1] Upstream: https://github.com/google/double-conversion/commit/8316ed5bf405835558a476e528d8e1d0adf69dd9
-
-Change-Id: If38151d1fa6f40a80274acc26d9ed6b4ac6049fe
-
-Signed-off-by:  <>
+Signed-off-by: Kelsie Flynn  <kelsiegeneflynn@gmail.com>
 ---
 
---- a/src/corelib/global/qrandom.cpp	2019-09-04 16:24:09.676750391
--0400
-+++ b/src/corelib/global/qrandom.cpp	2019-09-04 15:58:42.883875310
--0400
-@@ -218,6 +218,7 @@
+--- a/src/corelib/global/qrandom.cpp	2019-09-04 16:24:09.676750391 -0400
++++ b/src/corelib/global/qrandom.cpp	2019-09-04 15:58:42.883875310 -0400
+@@ -218,6 +218,7 @@ struct QRandomGenerator::SystemGenerator
  #endif // Q_OS_WINRT
  
      static SystemGenerator &self();
 +    typedef quint32 result_type;
-     void generate(quint32 *begin, quint32 *end)
-Q_DECL_NOEXCEPT_EXPR(FillBufferNoexcept);
+     void generate(quint32 *begin, quint32 *end) Q_DECL_NOEXCEPT_EXPR(FillBufferNoexcept);
  
-     // For std::mersenne_twister_engine implementations that use
-     // something
+     // For std::mersenne_twister_engine implementations that use something
+
+
