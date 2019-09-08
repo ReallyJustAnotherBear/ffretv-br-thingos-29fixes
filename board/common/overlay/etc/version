@@ -1,4 +1,4 @@
 OS_NAME="mythingOS"
 OS_SHORT_NAME="mythingos"
 OS_PREFIX="mything"
-OS_VERSION="qt5-arm6"
+OS_VERSION="dev+ffretv-31pre20190808"
