@@ -16,7 +16,6 @@ FFRETV_VERSION = f04b8aecd9c4dbfb2e4e85387f8ce0b1399e26b2
 FFRETV_SOURCE = ffretv-$(FFRETV_VERSION).tar.gz
 FFRETV_SITE = $(call github,kelsieflynn,ffretv-br,$(FFRETV_VERSION))
 FFRETV_SUBDIR = mythtv
-FFRETV_AUTORECONF = NO
 
 FFRETV_LICENSE = LGPL-2.1+, libjpeg license
 FFRETV_LICENSE_FILES = LICENSE.md COPYING.LGPLv2.1
@@ -25,11 +24,11 @@ FFRETV_LICENSE += and GPL-2.0+
 FFRETV_LICENSE_FILES += COPYING.GPLv2
 endif
 
+FFRETV_SUBDIR = mythtv
 FFRETV_CONF_OPTS = \
 	--prefix=/usr \
-#qmake=
 	--compile-type=release
-FFRETV-BR_DEPENDENCIES += host-pkgconf freetype rpi-userland qt5base qt5script qt5tools exiv2 libdvdread libhdhomerun libsamplerate libxml2 lzo taglib
+FFRETV_DEPENDENCIES += host-pkgconf freetype rpi-userland qt5base qt5script qt5tools exiv2 libdvdread libhdhomerun libsamplerate libxml2 lzo taglib
 
 ifeq ($(BR2_PACKAGE_FFRETV_GPL),y)
 FFRETV_CONF_OPTS += --enable-gpl
@@ -245,7 +244,7 @@ FFRETV_CONF_OPTS += --enable-omx-rpi \
 	--extra-cflags=-I$(STAGING_DIR)/usr/include/IL
 FFRETV_DEPENDENCIES += rpi-userland
 else
-FFRETV_CONF_OPTS += --disable-mmal --disable-omx --disable-omx-rpi
+FFRETV_CONF_OPTS += --disable-omx-rpi
 endif
 
 # To avoid a circular dependency only use opencv if opencv itself does
