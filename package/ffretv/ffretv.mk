@@ -3,20 +3,15 @@
 # ffretv
 #
 ################################################################################
-
-#FFRETV_VERSION = 
-#FFRETV_SOURCE = ffretv-$(FFRETV_VERSION).tar.gz
-#FFRETV_SOURCE = ffretv-31-preKF1.tar.gz
-#manual install in place for now
-#FFRETV_SITE =  https://api.github.com/repos/kelsieflynn/ffretv/tarball/31-preKF1
-FFRETV_INSTALL_TARGET = YES
-FFRETV_INSTALL_TARGET_OPTS = INSTALL_ROOT=$(TARGET_DIR) install
 # Use a tag or a full commit ID
-
-FFRETV_VERSION = 31pre20190807
+FFRETV_VERSION = 31pre20190808
 FFRETV_SOURCE = ffretv-$(FFRETV_VERSION).tar.gz
 FFRETV_SITE = $(call github,kelsieflynn,ffretv-br,$(FFRETV_VERSION))
-FFRETV_SUBDIR = ffretv-br-31pre20190807/mythtv
+
+FFRETV_SUBDIR = ffretv-br-31pre20190808/mythtv
+FFRETV_INSTALL_TARGET = YES
+FFRETV_INSTALL_TARGET_OPTS = INSTALL_ROOT=$(TARGET_DIR) install
+
 
 FFRETV_LICENSE = LGPL-2.1+, libjpeg license
 FFRETV_LICENSE_FILES = LICENSE.md COPYING.LGPLv2.1
@@ -25,7 +20,6 @@ FFRETV_LICENSE += and GPL-2.0+
 FFRETV_LICENSE_FILES += COPYING.GPLv2
 endif
 
-FFRETV_SUBDIR = mythtv
 FFRETV_CONF_OPTS = \
 	--prefix=/usr \
 	--compile-type=release
