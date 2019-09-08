@@ -9,7 +9,8 @@
 #FFRETV_SOURCE = ffretv-31-preKF1.tar.gz
 #manual install in place for now
 #FFRETV_SITE =  https://api.github.com/repos/kelsieflynn/ffretv/tarball/31-preKF1
-#FFRETV_INSTALL_STAGING = YES
+FFRETV_INSTALL_TARGET = YES
+FFRETV_INSTALL_TARGET_OPTS = INSTALL_ROOT=$(TARGET_DIR) install
 # Use a tag or a full commit ID
 
 FFRETV_VERSION = f04b8aecd9c4dbfb2e4e85387f8ce0b1399e26b2
