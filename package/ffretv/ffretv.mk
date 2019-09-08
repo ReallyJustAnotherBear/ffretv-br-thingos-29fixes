@@ -29,8 +29,7 @@ FFRETV_CONF_OPTS = \
 	--prefix=/usr \
 #qmake=
 	--compile-type=release
-
-FFRETV_DEPENDENCIES += host-pkgconf
+FFRETV-BR_DEPENDENCIES += host-pkgconf freetype rpi-userland qt5base qt5script qt5tools exiv2 libdvdread libhdhomerun libsamplerate libxml2 lzo taglib
 
 ifeq ($(BR2_PACKAGE_FFRETV_GPL),y)
 FFRETV_CONF_OPTS += --enable-gpl
