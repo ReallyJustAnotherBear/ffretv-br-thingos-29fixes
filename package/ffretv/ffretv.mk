@@ -4,7 +4,7 @@
 #
 ################################################################################
 # Use a tag or a full commit ID
-FFRETV_VERSION = 31pre20190808
+FFRETV_VERSION = 31pre20190909-2
 FFRETV_SOURCE = ffretv-$(FFRETV_VERSION).tar.gz
 FFRETV_SITE = $(call github,kelsieflynn,ffretv-br,$(FFRETV_VERSION))
 
