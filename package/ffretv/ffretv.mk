@@ -4,7 +4,7 @@
 #
 ################################################################################
 # Use a tag or a full commit ID
-FFRETV_VERSION = 31pre20190909-3
+FFRETV_VERSION = 31pre20190909-4
 FFRETV_SOURCE = ffretv-$(FFRETV_VERSION).tar.gz
 FFRETV_SITE = $(call github,kelsieflynn,ffretv-br,$(FFRETV_VERSION))
 
@@ -22,6 +22,7 @@ endif
 
 FFRETV_CONF_OPTS = \
 	--prefix=/usr \
+	--cpu=armv7-a \
 	--compile-type=release
 FFRETV_DEPENDENCIES += host-pkgconf freetype rpi-userland qt5base qt5script qt5tools exiv2 libdvdread libhdhomerun libsamplerate libxml2 lzo taglib
 
@@ -369,17 +370,6 @@ endif
 #FFRETV_CONF_OPTS += --disable-libx265
 #endif
 
-# Explicitly disable everything that doesn't match for ARM
-# FFRETV "autodetects" by compiling an extended instruction via AS
-# This works on compilers that aren't built for generic by default
-ifeq ($(BR2_ARM_CPU_ARMV4),y)
-FFRETV_CONF_OPTS += --disable-armv5te
-endif
-ifeq ($(BR2_ARM_CPU_ARMV6)$(BR2_ARM_CPU_ARMV7A),y)
-FFRETV_CONF_OPTS += --enable-armv6
-else
-FFRETV_CONF_OPTS += --disable-armv6 --disable-armv6t2
-endif
 ifeq ($(BR2_ARM_CPU_HAS_VFPV2),y)
 FFRETV_CONF_OPTS += --enable-vfp
 else
