@@ -9,3 +9,7 @@ sdram_freq=500
 core_freq=500
 over_voltage=2
 temp_limit=80
+
+hdmi_group=1
+hdmi_mode=4
+
