@@ -22,7 +22,6 @@ endif
 
 FFRETV_CONF_OPTS = \
 	--prefix=/usr \
-	--cpu=armv7-a \
 	--compile-type=release
 FFRETV_DEPENDENCIES += host-pkgconf freetype rpi-userland qt5base qt5script qt5tools exiv2 libdvdread libhdhomerun libsamplerate libxml2 lzo taglib
 
