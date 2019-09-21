@@ -78,3 +78,10 @@ WHY DO YOU THINK THAT IS?
 BECAUSE WHEN YOUR OLDER ELDERS ARE AROUND YOU SHOULD LEARN TO FIND SOME GROUND.
 ```
 
+
+https://www.youtube.com/watch?v=tN9wxEiXUwQ
+
+Just exactly what is the avg age of the current mythtv dev group does anyone know?
+
+
+
