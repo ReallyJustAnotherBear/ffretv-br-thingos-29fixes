@@ -37,7 +37,10 @@ When I released my custom build of Automyth28 I dubbed it XmasGift2, which was b
 
 So some punk  at mythtv thought I'll be real smurt for all those KELSIE's and OTHERS OUT THEIR THAT DONT COME TO OUR SOCIAL PARTIES AND BOW, I WILL POKE THEM.
 
-Well the code name for MYTHTV IS CURRENTLY = BUZZoff. So while I can not take all the credit for their naming shchemas, they still let us all know, they may know some C++ or a scripting language but someone left the playpen open again.
+Well the code name for MYTHTV IS CURRENTLY = BUZZoff. 
+REALLY JOHNNY BUZZOFF?
+
+So while I can not take all the credit for their naming shchemas, they still let us all know, they may know some C++ or a scripting language but someone left the playpen open again.
 
 People say I enjoy drama really, if that was true dont you think I would be on the MYTHTV upstream bandwagin singing their songs since the early 2000's if that was really the case?
 
