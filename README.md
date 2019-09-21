@@ -21,7 +21,7 @@ THE LONG EXPLAINATION INCLUDING THE DRAMA about why I dont play with MYTHTV UPST
 ```
 Mythtv I have learned has long sinced needed a good leader for the long run. No matter what temp residents they have.
 Fact is they dont seem to have a king like our kernel does. Doesnt seem to me they even have good relationships with the french ffmpeg devs, but what do I know. Anyway, they stagnated a lot until the last and current leader is making a name for himself. That person has from my observation been PB. I think he has done a good job. SHould he have told and SAID NOT DONT PICK "BUZZOFF" as the code name. That lowers us to a level what dont want percieved. 
-BUT HE DIDNT SEEM TO HAVE A SAY OR WANT TO SAY. So theirs another reason I havent really even tried to warm up with Peter either. So while my expectations may not be met by mythtv devs on a whole, I'm honest enought to say OKAY, I know my standards are higher than avg.
+BUT HE DIDNT SEEM TO HAVE A SAY OR WANT TO SAY. So there is another reason I havent really even tried to warm up with Peter either. So while my expectations may not be met by mythtv devs on a whole, I'm honest enought to say OKAY, I know my standards are higher than avg.
 
 BUT HEY this how open source shops work, they let a working leader run for a while and run his philosphyes for as long
 as he can stand it. Then along comes another star to take the LEAD, doing whatever is on his list.
