@@ -35,3 +35,11 @@ Does any of their bumhurt feelings or low expectations of me prevent me from doi
 Have they stopped me by hurting my feelings at ALL?
 
 NONE. I GIVE  BACK TO THEM AND THEY PRETEND I DONT EXIST OR THEY INSULT ME in a closed loop. Uust like RD. I GET NO RESPECT. THATS OKAY THOUGH, I BEEN TAUGHT to raise my standards anyway and that i dont need respect from adults that act like children when it comes to whats important.
+
+
+BTW, WHEN THIS PERSON TALKS:
+
+https://www.mythtv.org/news/159/0.27%20Released
+
+
+WHOM IS WE? IS IT A TINY MOUSE IN THE POCKET OR IS HE ADMITING THEY ALL IMMATURE?
