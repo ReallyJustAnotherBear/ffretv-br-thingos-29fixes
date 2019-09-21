@@ -43,3 +43,24 @@ https://www.mythtv.org/news/159/0.27%20Released
 
 
 WHOM IS WE? IS IT A TINY MOUSE IN THE POCKET OR IS HE ADMITING THEY ALL IMMATURE?
+
+
+
+https://lists.gt.net/mythtv/users/618725
+
+Comment from user about the name:
+"Maybe they really meant this "Using protocol version 91 BuzzOff" ????"
+
+
+
+So while they work out the ADVERTISING POLITICS IN MYTHTV UPSTREAM they can get patches from people tired of their chit by searching them. If they want help they can try not to offend and pretend everyone their now wrote every single code peice.
+
+BECAUSE TRUTH IS, HARLY A FEW OF YOU CHANGE MUCH OF THE CORE C++.
+
+SURE YOUR ALL HOOKING SCRIPTS INTO IT LEFT AND RIGHT.
+
+BUT THE EXPENSIVE HIGH DOLLAR PROGRAMMERS DONT SEEM TO COME AROUND MUCH TO REALLY TUNE THE LOW LEVEL STUFF?
+
+WHY DO YOU THINK THAT IS?
+
+BECAUSE WHEN YOUR OLDER ELDERS ARE AROUND YOU SHOULD LEARN TO FIND SOME GROUND.
