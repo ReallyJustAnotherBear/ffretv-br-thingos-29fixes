@@ -16,7 +16,8 @@ So far I have a hw accelerated working ffretv(mythtv) 29Fixes running for the RP
 Why do I do this?  Even though I have not had a personal problem with the mythtv active dev team in years, over 5.
 
 
-THE LONG EXPLAINATION INCLUDING THE DRAMA:
+THE LONG EXPLAINATION INCLUDING THE DRAMA about why I dont play with MYTHTV UPSTREAM AT ALL, AND I MEAN NO REIGNDEER GAMES, NONE.
+
 ```
 Mythtv I have learned has long sinced needed a good leader for the long run. No matter what temp residents they have.
 Fact is they dont seem to have a king like our kernel does. Doesnt seem to me they even have good relationships with the french ffmpeg devs, but what do I know. Anyway, they stagnated a lot until the last and current leader is making a name for himself. That person has from my observation been PB. I think he has done a good job. SHould he have told and SAID NOT DONT PICK "BUZZOFF" as the code name. That lowers us to a level what dont want percieved. 
