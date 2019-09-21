@@ -7,6 +7,8 @@ Furthermore, mythtv is based of qt/ffmpeg/mysql, and ThingOS is based off Buildr
 
 It's the great fun world of software develoment that even a non-pro like myself gets to play with.
 
+
+
 Currently it works on RPI2/RP3, I'm working to get the RPI/0 going now.
 
 
