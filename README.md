@@ -60,6 +60,10 @@ https://www.mythtv.org/news/159/0.27%20Released
 
 
 WHOM IS WE? IS IT A TINY MOUSE IN THE POCKET OR IS HE ADMITING THEY ALL IMMATURE?
+Oh I see it now, its Stuart M, that seem to find creating funny names for mythtv codes funny.
+
+So from this point forward LETS ALL ASSUME ANY CODENAMES FROM MYTHTV COME DIRECTLY FROM
+STUART M. unless told otherwise, he has taken credit. Well done STU! ...sarcasm
 
 
 
