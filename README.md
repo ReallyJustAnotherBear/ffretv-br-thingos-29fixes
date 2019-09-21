@@ -15,6 +15,18 @@ So far I have a hw accelerated working ffretv(mythtv) 29Fixes running for the RP
 
 Why do I do this?  Even though I have not had a personal problem with the mythtv active dev team in years, over 5.
 
+
+THE LONG EXPLAINATION INCLUDING THE DRAMA:
+```
+Mythtv I have learned has long sinced needed a good leader for the long run. No matter what temp residents they have.
+Fact is they dont seem to have a king like our kernel does. Doesnt seem to me they even have good relationships with the french ffmpeg devs, but what do I know. Anyway, they stagnated a lot until the last and current leader is making a name for himself. That person has from my observation been Petter Bennett. I think he has done a good job. SHould he have told and SAID NOT DONT PICK "BUZZOFF" as the code name. That lowers us to a level what dont want percieved. 
+BUT HE DIDNT SEEM TO HAVE A SAY OR WANT TO SAY. So theirs another reason I havent really even tried to warm up with Peter either. So while my expectations may not be met by mythtv devs on a whole, I'm honest enought to say OKAY, I know my standards are higher than avg.
+
+BUT HEY this how open source shops work, they let a working leader run for a while and run his philosphyes for as long
+as he can stand it. Then along comes another star to take the LEAD, doing whatever is on his list.
+
+Meanwhile, more loyal submissive types have been helping mythtv I notice quietly behind the scenes for years, but you dont hear from them much, because I assume they just enjoy the work but not the youthful drama.
+
 Its been rumored that I just like to toy with the mythtv devs and show them a thing or two...
 Thats bs and trollish in thought, the reality is I was and am a nerd too and I get to enjoy playing with mythtv.
 I've said some not so sweet things about mythtv before, so they hold on to that, no matter what else i do.
@@ -64,3 +76,5 @@ BUT THE EXPENSIVE HIGH DOLLAR PROGRAMMERS DONT SEEM TO COME AROUND MUCH TO REALL
 WHY DO YOU THINK THAT IS?
 
 BECAUSE WHEN YOUR OLDER ELDERS ARE AROUND YOU SHOULD LEARN TO FIND SOME GROUND.
+```
+
