@@ -7,4 +7,6 @@ Furthermore, mythtv is based of qt/ffmpeg/mysql, and ThingOS is based off Buildr
 
 It's the great fun world of software develoment that even a non-pro like myself gets to play with.
 
+I was going to say a lot more here, but decided to wait till later to share more for now here. I'll use
+social media to chastise mythtv upstream with my opinions, if I feel the need to.
 
