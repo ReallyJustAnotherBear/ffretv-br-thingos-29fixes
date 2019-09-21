@@ -34,4 +34,4 @@ I have sit by an watched the list of devs go through that place that seems longe
 Does any of their bumhurt feelings or low expectations of me prevent me from doing my projects?
 Have they stopped me by hurting my feelings at ALL?
 
-NONE. I GIVE  BACK TO THEM AND THEY PRETEND I DONT EXIST OR THEY INSULT ME in a closed loop. Uust like RD. I GET NO RESPECT. THATS OKAY THOUGH, I BEEN TAUGHT to raise my standards anyway.
+NONE. I GIVE  BACK TO THEM AND THEY PRETEND I DONT EXIST OR THEY INSULT ME in a closed loop. Uust like RD. I GET NO RESPECT. THATS OKAY THOUGH, I BEEN TAUGHT to raise my standards anyway and that i dont need respect from adults that act like children when it comes to whats important.
