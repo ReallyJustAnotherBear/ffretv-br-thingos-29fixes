@@ -16,7 +16,7 @@ So far I have a hw accelerated working ffretv(mythtv) 29Fixes running for the RP
 Why do I do this?  Even though I have not had a personal problem with the mythtv active dev team in years, over 5.
 
 
-THE LONG EXPLAINATION INCLUDING THE DRAMA about why I dont play with MYTHTV UPSTREAM AT ALL, AND I MEAN NO REIGNDEER GAMES, NONE.
+THE LONG EXPLAINATION INCLUDING THE DRAMA about why I dont play with MYTHTV UPSTREAM AT ALL, AND I MEAN NO REIGNDEER GAMES, NONE. So long as they treat people like rudolf they dont understand or cant tolerate.
 
 ```
 Mythtv I have learned has long sinced needed a good leader for the long run. No matter what temp residents they have.
