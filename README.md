@@ -24,7 +24,7 @@ Fact is they dont seem to have a king like our kernel does. Doesnt seem to me th
 That lowers us to a level what dont want percieved. 
 BUT HE DIDNT SEEM TO HAVE A SAY OR WANT TO SAY. So there is another reason I havent really even tried to warm up with Peter either. So while my expectations may not be met by mythtv devs on a whole, I'm honest enought to say OKAY, I know my standards are higher than avg.
 
-BUT HEY this how open source shops work, they let a working leader run for a while and run his philosphyes for as long
+BUT HEY this how open source shops work, they let a working leader run for a while and run his philosphies for as long
 as he can stand it. Then along comes another star to take the LEAD, doing whatever is on his list.
 
 Meanwhile, more loyal submissive types have been helping mythtv I notice quietly behind the scenes for years, but you dont hear from them much, because I assume they just enjoy the work but not the youthful drama.
