@@ -8,6 +8,7 @@ GOVDIR="/sys/devices/system/cpu/cpufreq/${GOV}"
 test -n "${OS_VERSION}" || source /etc/init.d/base
 
 configure() {
+    echo 1000000 > ${CPUFREQDIR}/scaling_min_freq
     echo ${GOV} > ${CPUFREQDIR}/scaling_governor
     if [[ ${GOV} == "ondemand" ]]; then
         echo 50 > ${GOVDIR}/up_threshold
