@@ -50,6 +50,7 @@ case "$1" in
         ln -s /usr/share/zoneinfo/America/New_York /data/etc/localtime
         touch /data/etc/adjtime
         mkdir -pv /data/dot.mythtv
+        ln -s /data/dot.mythtv /root/.mythtv
         
         sync
         msg_done
