@@ -9,7 +9,7 @@ It's the great fun world of software develoment that even a non-pro like myself 
 
 
 
-# Currently it works on RPI2/RPI3*
+### Currently it works on RPI2/RPI3*
          I'm working to get the RPI/0 going now.
          *You can try 3 too , but it has debug enabled, so the mkrelease may fail unless you increase rootfs size, else                disable DEBUG in menuconfig first for the rpi3.
 
