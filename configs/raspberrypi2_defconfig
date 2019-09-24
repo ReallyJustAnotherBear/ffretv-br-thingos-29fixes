@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot 2019.02.2-00003-g4b982b89dc-dirty Configuration
+# Buildroot 2019.02.2-00060-gf8ab804c50-dirty Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 BR2_HOST_GCC_AT_LEAST_4_5=y
@@ -679,7 +679,7 @@ BR2_PACKAGE_CMAKE_ARCH_SUPPORTS=y
 # BR2_PACKAGE_GPERF is not set
 # BR2_PACKAGE_GREP is not set
 # BR2_PACKAGE_JO is not set
-BR2_PACKAGE_JQ=y
+# BR2_PACKAGE_JQ is not set
 # BR2_PACKAGE_LIBTOOL is not set
 # BR2_PACKAGE_MAKE is not set
 # BR2_PACKAGE_PATCH is not set
