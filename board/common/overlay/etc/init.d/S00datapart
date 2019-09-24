@@ -50,7 +50,9 @@ case "$1" in
         ln -s /usr/share/zoneinfo/America/New_York /data/etc/localtime
         touch /data/etc/adjtime
         mkdir -pv /data/dot.mythtv
+	mount -o remount,rw /
         ln -s /data/dot.mythtv /root/.mythtv
+	mount -o remount,ro /
         echo "<Configuration>
   <LocalHostName>my-unique-identifier-goes-here</LocalHostName>
   <Database>
