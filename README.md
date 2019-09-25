@@ -3,7 +3,7 @@ Whats the references to the name?
 
 FFRETV is  a project of mine based of mythtv, thangos is a further customized project based off THingOS.
 
-Furthermore, mythtv is based of qt/ffmpeg/mysql, and ThingOS is based off Buildroot.
+Furthermore, mythtv is based of qt/ffmpeg/mysql, and ThingOS is based off Buildroot. I have to say, using Thingos sure helped me not re-invent the wheel. I guess I'm going to have to break down and donate to CC to show my support for his continued efforts.
 
 It's the great fun world of software develoment that even a non-pro like myself gets to play with.
 
