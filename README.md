@@ -15,7 +15,7 @@ It's the great fun world of software develoment that even a non-pro like myself 
 
 
 RPI/0/W 
-ARMV6 ffretv.summary
+ARMV6 ffretv.configure.summary
 ```
 # Basic Settings
 Qt minimum version        5.2
