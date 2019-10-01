@@ -47,8 +47,34 @@ case "$1" in
         msg_begin "Creating required data files"
         cp -pur /usr/share/dataskel/* /data
         cp /etc/version /data/etc/version
-        ln -s /usr/share/zoneinfo/UTC /data/etc/localtime
+        ln -s /usr/share/zoneinfo/America/New_York /data/etc/localtime
         touch /data/etc/adjtime
+        mkdir -pv /data/dot.mythtv
+	mount -o remount,rw /
+        ln -s /data/dot.mythtv /root/.mythtv
+	mount -o remount,ro /
+        echo "<Configuration>
+  <LocalHostName>my-unique-identifier-goes-here</LocalHostName>
+  <Database>
+    <PingHost>1</PingHost>
+    <Host>192.168.xxx.xxx</Host>
+    <UserName>mythtv</UserName>
+    <Password>mythtv</Password>
+    <DatabaseName>mythconverg</DatabaseName>
+    <Port>3306</Port>
+  </Database>
+  <WakeOnLAN>
+    <Enabled>0</Enabled>
+    <SQLReconnectWaitTime>0</SQLReconnectWaitTime>
+    <SQLConnectRetry>5</SQLConnectRetry>
+    <Command>echo 'WOLsqlServerCommand not set'</Command>
+  </WakeOnLAN>
+  <UPnP>
+    <UDN>
+      <MediaRenderer></MediaRenderer>
+    </UDN>
+  </UPnP>
+</Configuration>" > /data/dot.mythtv/config.xml
         sync
         msg_done
         

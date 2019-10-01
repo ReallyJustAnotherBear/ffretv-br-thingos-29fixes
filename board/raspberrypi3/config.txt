@@ -1,7 +1,8 @@
-gpu_mem=128
-
+gpu_mem=256
 dtparam=i2c_arm=on
 dtparam=i2s=on
 dtparam=spi=on
 dtparam=audio=on
-
+#720p output resolution
+hdmi_group=1
+hdmi_mode=4
