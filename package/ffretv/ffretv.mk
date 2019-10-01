@@ -3,13 +3,15 @@
 # ffretv
 #
 ################################################################################
+# Use a tag or a full commit ID
+FFRETV_VERSION = v.29fixes20190917-6
+FFRETV_SOURCE = ffretv-$(FFRETV_VERSION).tar.gz
+FFRETV_SITE = $(call github,kelsieflynn,ffretv-br,$(FFRETV_VERSION))
 
-#FFRETV_VERSION = 
-#FFRETV_SOURCE = ffretv-$(FFRETV_VERSION).tar.gz
-#FFRETV_SOURCE = ffretv-31-preKF1.tar.gz
-#manual install in place for now
-FFRETV_SITE =  https://api.github.com/repos/kelsieflynn/ffretv/tarball/31-preKF1
-FFRETV_INSTALL_STAGING = YES
+FFRETV_SUBDIR = mythtv
+FFRETV_INSTALL_TARGET = YES
+FFRETV_INSTALL_TARGET_OPTS = INSTALL_ROOT=$(TARGET_DIR) install
+
 
 FFRETV_LICENSE = LGPL-2.1+, libjpeg license
 FFRETV_LICENSE_FILES = LICENSE.md COPYING.LGPLv2.1
@@ -20,10 +22,8 @@ endif
 
 FFRETV_CONF_OPTS = \
 	--prefix=/usr \
-#qmake=
 	--compile-type=release
-
-FFRETV_DEPENDENCIES += host-pkgconf
+FFRETV_DEPENDENCIES += host-pkgconf freetype rpi-userland qt5base qt5script qt5tools exiv2 libdvdread libhdhomerun libsamplerate libxml2 lzo taglib
 
 ifeq ($(BR2_PACKAGE_FFRETV_GPL),y)
 FFRETV_CONF_OPTS += --enable-gpl
@@ -239,7 +239,7 @@ FFRETV_CONF_OPTS += --enable-omx-rpi \
 	--extra-cflags=-I$(STAGING_DIR)/usr/include/IL
 FFRETV_DEPENDENCIES += rpi-userland
 else
-FFRETV_CONF_OPTS += --disable-mmal --disable-omx --disable-omx-rpi
+FFRETV_CONF_OPTS += --disable-omx-rpi
 endif
 
 # To avoid a circular dependency only use opencv if opencv itself does
@@ -369,17 +369,6 @@ endif
 #FFRETV_CONF_OPTS += --disable-libx265
 #endif
 
-# Explicitly disable everything that doesn't match for ARM
-# FFRETV "autodetects" by compiling an extended instruction via AS
-# This works on compilers that aren't built for generic by default
-ifeq ($(BR2_ARM_CPU_ARMV4),y)
-FFRETV_CONF_OPTS += --disable-armv5te
-endif
-ifeq ($(BR2_ARM_CPU_ARMV6)$(BR2_ARM_CPU_ARMV7A),y)
-FFRETV_CONF_OPTS += --enable-armv6
-else
-FFRETV_CONF_OPTS += --disable-armv6 --disable-armv6t2
-endif
 ifeq ($(BR2_ARM_CPU_HAS_VFPV2),y)
 FFRETV_CONF_OPTS += --enable-vfp
 else
