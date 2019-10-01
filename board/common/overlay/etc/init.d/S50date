@@ -23,11 +23,11 @@ test -s ${CONF} || exit 0
 
 test "${OS_NETWORKLESS}" == "true" && exit 0
 
-DATE_TIMEOUT=10
-DATE_METHOD=sntp
-DATE_HOST="google.com"
-DATE_INTERVAL="900"
-DATE_NTP_SERVER=""
+DATE_TIMEOUT=5
+DATE_METHOD=ntp
+DATE_HOST=""
+DATE_INTERVAL="300"
+DATE_NTP_SERVER="time.localhost.localdomain"
 
 source ${CONF}
 
