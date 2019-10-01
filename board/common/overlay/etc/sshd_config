@@ -6,8 +6,8 @@ HostKey /data/etc/ssh_host_dsa_key
 HostKey /data/etc/ssh_host_ecdsa_key
 HostKey /data/etc/ssh_host_ed25519_key
 
-PermitRootLogin yes
-PermitEmptyPasswords yes
+PermitRootLogin no
+PermitEmptyPasswords no
 AuthorizedKeysFile /data/etc/ssh_authorized_keys
 UseDNS no
 Banner /var/cache/sshd_banner
