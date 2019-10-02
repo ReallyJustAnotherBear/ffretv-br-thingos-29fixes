@@ -1,3 +1,21 @@
+#
+# Automatically generated file; DO NOT EDIT.
+# Buildroot 2019.02.2-g61145d6eb9-dirty Configuration
+#
+BR2_HAVE_DOT_CONFIG=y
+BR2_HOST_GCC_AT_LEAST_4_5=y
+BR2_HOST_GCC_AT_LEAST_4_6=y
+BR2_HOST_GCC_AT_LEAST_4_7=y
+BR2_HOST_GCC_AT_LEAST_4_8=y
+BR2_HOST_GCC_AT_LEAST_4_9=y
+BR2_HOST_GCC_AT_LEAST_5=y
+BR2_HOST_GCC_AT_LEAST_6=y
+BR2_HOST_GCC_AT_LEAST_7=y
+BR2_HOST_GCC_AT_LEAST_8=y
+
+#
+# Target options
+#
 BR2_ARCH_HAS_MMU_OPTIONAL=y
 # BR2_arcle is not set
 # BR2_arceb is not set
@@ -496,24 +514,24 @@ BR2_PACKAGE_FFRETV_ARCH_SUPPORTS=y
 BR2_PACKAGE_FFRETV=y
 BR2_PACKAGE_FFRETV_GPL=y
 # BR2_PACKAGE_FFRETV_NONFREE is not set
-BR2_PACKAGE_FFRETV_FFRETV=y
+BR2_PACKAGE_FFRETV_FFMPEG=y
 BR2_PACKAGE_FFRETV_FFPLAY=y
 # BR2_PACKAGE_FFRETV_FFSERVER is not set
 BR2_PACKAGE_FFRETV_FFPROBE=y
 # BR2_PACKAGE_FFRETV_AVRESAMPLE is not set
-# BR2_PACKAGE_FFRETV_POSTPROC is not set
+BR2_PACKAGE_FFRETV_POSTPROC=y
 BR2_PACKAGE_FFRETV_SWSCALE=y
-BR2_PACKAGE_FFRETV_ENCODERS="all"
-BR2_PACKAGE_FFRETV_DECODERS="all"
-BR2_PACKAGE_FFRETV_MUXERS="all"
-BR2_PACKAGE_FFRETV_DEMUXERS="all"
-BR2_PACKAGE_FFRETV_PARSERS="all"
+BR2_PACKAGE_FFRETV_ENCODERS="aac,ac3,eac3,h264_omx,libmp3lame,pcm_mulaw"
+BR2_PACKAGE_FFRETV_DECODERS="aac,ac3,eac3,h264,mpeg2video,mpeg4,mjpeg,pcm_mulaw"
+BR2_PACKAGE_FFRETV_MUXERS="ac3,eac3,dts,h264,mp4,mpegts,pcm_mulaw"
+BR2_PACKAGE_FFRETV_DEMUXERS="aac,ac3,eac3,h264,mjpeg,mpegts,mpegtsraw,mpegps,mpegvideo,rtsp,pcm_mulaw"
+BR2_PACKAGE_FFRETV_PARSERS="aac,ac3,h264,mjpeg,mpeg4video,mpegaudio,vorbis"
 BR2_PACKAGE_FFRETV_BSFS="all"
-BR2_PACKAGE_FFRETV_PROTOCOLS="all"
-BR2_PACKAGE_FFRETV_FILTERS="all"
-BR2_PACKAGE_FFRETV_INDEVS=y
+BR2_PACKAGE_FFRETV_PROTOCOLS="file,http,udp,tcp,udplite,unix,rtp"
+BR2_PACKAGE_FFRETV_FILTERS="crop,cropdetect,field,format,kerneldeint,interlace,interleave,loop,noise,null,nullsink,nullsrc,overlay,rotate,scale "
+# BR2_PACKAGE_FFRETV_INDEVS is not set
 BR2_PACKAGE_FFRETV_OUTDEVS=y
-BR2_PACKAGE_FFRETV_EXTRACONF=""
+BR2_PACKAGE_FFRETV_EXTRACONF=" --disable-mheg --disable-dvb --disable-hdhomerun --disable-vbox --enable-proc-opt --disable-vdpau --disable-debug --disable-vaapi --disable-bsfs --disable-doc --disable-txtpages --disable-podpages --disable-manpages --disable-htmlpages --disable-safe-bitstream-reader --disable-symver"
 # BR2_PACKAGE_FLAC is not set
 # BR2_PACKAGE_FLITE is not set
 # BR2_PACKAGE_GMRENDER_RESURRECT is not set

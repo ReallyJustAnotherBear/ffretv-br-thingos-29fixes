@@ -51,116 +51,116 @@ else
 FFRETV_CONF_OPTS += --disable-ffplay
 endif
 
-#ifeq ($(BR2_PACKAGE_FFRETV_FFSERVER),y)
-#FFRETV_CONF_OPTS += --enable-ffserver
-#else
-#FFRETV_CONF_OPTS += --disable-ffserver
-#endif
+ifeq ($(BR2_PACKAGE_FFRETV_FFSERVER),y)
+FFRETV_CONF_OPTS += --enable-ffserver
+else
+FFRETV_CONF_OPTS += --disable-ffserver
+endif
 
-#ifeq ($(BR2_PACKAGE_FFRETV_AVRESAMPLE),y)
-#FFRETV_CONF_OPTS += --enable-avresample
-#else
-#FFRETV_CONF_OPTS += --disable-avresample
-#endif
+ifeq ($(BR2_PACKAGE_FFRETV_AVRESAMPLE),y)
+FFRETV_CONF_OPTS += --enable-avresample
+else
+FFRETV_CONF_OPTS += --disable-avresample
+endif
 
-#ifeq ($(BR2_PACKAGE_FFRETV_FFPROBE),y)
-#FFRETV_CONF_OPTS += --enable-ffprobe
-#else
-#FFRETV_CONF_OPTS += --disable-ffprobe
-#endif
+ifeq ($(BR2_PACKAGE_FFRETV_FFPROBE),y)
+FFRETV_CONF_OPTS += --enable-ffprobe
+else
+FFRETV_CONF_OPTS += --disable-ffprobe
+endif
 
-#ifeq ($(BR2_PACKAGE_FFRETV_POSTPROC),y)
-#FFRETV_CONF_OPTS += --enable-postproc
-#else
-#FFRETV_CONF_OPTS += --disable-postproc
-#endif
+ifeq ($(BR2_PACKAGE_FFRETV_POSTPROC),y)
+FFRETV_CONF_OPTS += --enable-postproc
+else
+FFRETV_CONF_OPTS += --disable-postproc
+endif
 
-#ifeq ($(BR2_PACKAGE_FFRETV_SWSCALE),y)
-#FFRETV_CONF_OPTS += --enable-swscale
-#else
-#FFRETV_CONF_OPTS += --disable-swscale
-#endif
+ifeq ($(BR2_PACKAGE_FFRETV_SWSCALE),y)
+FFRETV_CONF_OPTS += --enable-swscale
+else
+FFRETV_CONF_OPTS += --disable-swscale
+endif
 
-#ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_ENCODERS)),all)
-#FFRETV_CONF_OPTS += --disable-encoders \
-#	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_ENCODERS)),--enable-encoder=$(x))
-#endif
+ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_ENCODERS)),all)
+FFRETV_CONF_OPTS += --disable-encoders \
+	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_ENCODERS)),--enable-encoder=$(x))
+endif
 
-#ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_DECODERS)),all)
-#FFRETV_CONF_OPTS += --disable-decoders \
-#	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_DECODERS)),--enable-decoder=$(x))
-#endif
+ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_DECODERS)),all)
+FFRETV_CONF_OPTS += --disable-decoders \
+	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_DECODERS)),--enable-decoder=$(x))
+endif
 
-#ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_MUXERS)),all)
-#FFRETV_CONF_OPTS += --disable-muxers \
-#	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_MUXERS)),--enable-muxer=$(x))
-#endif
+ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_MUXERS)),all)
+FFRETV_CONF_OPTS += --disable-muxers \
+	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_MUXERS)),--enable-muxer=$(x))
+endif
 
-#ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_DEMUXERS)),all)
-#FFRETV_CONF_OPTS += --disable-demuxers \
-#	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_DEMUXERS)),--enable-demuxer=$(x))
-#endif
+ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_DEMUXERS)),all)
+FFRETV_CONF_OPTS += --disable-demuxers \
+	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_DEMUXERS)),--enable-demuxer=$(x))
+endif
 
-#ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_PARSERS)),all)
-#FFRETV_CONF_OPTS += --disable-parsers \
-#	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_PARSERS)),--enable-parser=$(x))
-#endif
+ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_PARSERS)),all)
+FFRETV_CONF_OPTS += --disable-parsers \
+	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_PARSERS)),--enable-parser=$(x))
+endif
 
-#ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_BSFS)),all)
-#FFRETV_CONF_OPTS += --disable-bsfs \
-#	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_BSFS)),--enable-bsfs=$(x))
-#endif
+ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_BSFS)),all)
+FFRETV_CONF_OPTS += --disable-bsfs \
+	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_BSFS)),--enable-bsfs=$(x))
+endif
 
-#ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_PROTOCOLS)),all)
-#FFRETV_CONF_OPTS += --disable-protocols \
-#	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_PROTOCOLS)),--enable-protocol=$(x))
-#endif
+ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_PROTOCOLS)),all)
+FFRETV_CONF_OPTS += --disable-protocols \
+	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_PROTOCOLS)),--enable-protocol=$(x))
+endif
 
-#ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_FILTERS)),all)
-#FFRETV_CONF_OPTS += --disable-filters \
-#	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_FILTERS)),--enable-filter=$(x))
-#endif
+ifneq ($(call qstrip,$(BR2_PACKAGE_FFRETV_FILTERS)),all)
+FFRETV_CONF_OPTS += --disable-filters \
+	$(foreach x,$(call qstrip,$(BR2_PACKAGE_FFRETV_FILTERS)),--enable-filter=$(x))
+endif
 
-#ifeq ($(BR2_PACKAGE_FFRETV_INDEVS),y)
-#FFRETV_CONF_OPTS += --enable-indevs
-#ifeq ($(BR2_PACKAGE_ALSA_LIB),y)
-#FFRETV_CONF_OPTS += --enable-alsa
-#FFRETV_DEPENDENCIES += alsa-lib
-#else
-#FFRETV_CONF_OPTS += --disable-alsa
-#endif
-#else
-#FFRETV_CONF_OPTS += --disable-indevs
-#endif
+ifeq ($(BR2_PACKAGE_FFRETV_INDEVS),y)
+FFRETV_CONF_OPTS += --enable-indevs
+ifeq ($(BR2_PACKAGE_ALSA_LIB),y)
+FFRETV_CONF_OPTS += --enable-alsa
+FFRETV_DEPENDENCIES += alsa-lib
+else
+FFRETV_CONF_OPTS += --disable-alsa
+endif
+else
+FFRETV_CONF_OPTS += --disable-indevs
+endif
 
-#ifeq ($(BR2_PACKAGE_FFRETV_OUTDEVS),y)
-#FFRETV_CONF_OPTS += --enable-outdevs
-#ifeq ($(BR2_PACKAGE_ALSA_LIB),y)
-#FFRETV_DEPENDENCIES += alsa-lib
-#endif
-#else
-#FFRETV_CONF_OPTS += --disable-outdevs
-#endif
+ifeq ($(BR2_PACKAGE_FFRETV_OUTDEVS),y)
+FFRETV_CONF_OPTS += --enable-outdevs
+ifeq ($(BR2_PACKAGE_ALSA_LIB),y)
+FFRETV_DEPENDENCIES += alsa-lib
+endif
+else
+FFRETV_CONF_OPTS += --disable-outdevs
+endif
 
-#ifeq ($(BR2_TOOLCHAIN_HAS_THREADS),y)
-#FFRETV_CONF_OPTS += --enable-pthreads
-#else
-#FFRETV_CONF_OPTS += --disable-pthreads
-#endif
+ifeq ($(BR2_TOOLCHAIN_HAS_THREADS),y)
+FFRETV_CONF_OPTS += --enable-pthreads
+else
+FFRETV_CONF_OPTS += --disable-pthreads
+endif
 
-#ifeq ($(BR2_PACKAGE_ZLIB),y)
-#FFRETV_CONF_OPTS += --enable-zlib
-#FFRETV_DEPENDENCIES += zlib
-#else
-#FFRETV_CONF_OPTS += --disable-zlib
-#endif
+ifeq ($(BR2_PACKAGE_ZLIB),y)
+FFRETV_CONF_OPTS += --enable-zlib
+FFRETV_DEPENDENCIES += zlib
+else
+FFRETV_CONF_OPTS += --disable-zlib
+endif
 
-#ifeq ($(BR2_PACKAGE_BZIP2),y)
-#FFRETV_CONF_OPTS += --enable-bzlib
-#FFRETV_DEPENDENCIES += bzip2
-#else
-#FFRETV_CONF_OPTS += --disable-bzlib
-#endif
+ifeq ($(BR2_PACKAGE_BZIP2),y)
+FFRETV_CONF_OPTS += --enable-bzlib
+FFRETV_DEPENDENCIES += bzip2
+else
+FFRETV_CONF_OPTS += --disable-bzlib
+endif
 
 #ifeq ($(BR2_PACKAGE_FDK_AAC)$(BR2_PACKAGE_FFRETV_NONFREE),yy)
 #FFRETV_CONF_OPTS += --enable-libfdk-aac

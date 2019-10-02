@@ -38,7 +38,7 @@ config BR2_PACKAGE_FFRETV_NONFREE
 	  allow use of nonfree code, the resulting libs and binaries
 	  will be unredistributable
 
-config BR2_PACKAGE_FFRETV_FFRETV
+config BR2_PACKAGE_FFRETV_FFMPEG
 	bool "Build ffmpeg (the command line application)"
 	default y
 	help
