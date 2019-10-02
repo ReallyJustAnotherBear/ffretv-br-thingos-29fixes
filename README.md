@@ -9,9 +9,13 @@ It's the great fun world of software develoment that even a non-pro like myself 
 
 
 
-### Currently it works on RPI2/RPI3, RPI4 with VC will be done after RPI/RPI2/RPI3 testing is complete. ###
-         I'm working to get the RPI/0 going now, but even 720p performance is unacceptable still.
-
+### Currently it works only with a RPI/RPI2/RPI3 using the legacy graphics driver stack ### 
+### RPI4 with (fkms/VC4 Mesa “V3D”) will be done after RPI/RPI2/RPI3 brcm testing is complete. ###
+ 
+ 
+ *I'm working to get the RPI/0 going now, but even 720p performance is unacceptable still.
+ 
+ 
 *Note the default output resolution is set to 720p and works well with opengl osd. If you need 1080 you may need to
 use softblend as I have seen it work better under high loads where opengl/threaded would produce jerky playback.
 So while opengl looks best with the OSD it does not work well with h264 avc @ 1080 in my testing.*
