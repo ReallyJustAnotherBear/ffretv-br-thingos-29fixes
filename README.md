@@ -8,6 +8,9 @@ Furthermore, mythtv is based of qt/ffmpeg/mysql, and ThingOS is based off Buildr
 It's the great fun world of software develoment that even a non-pro like myself gets to play with.
 
 
+Q.Why so many branches?
+A. Random Branches are for ideas. Some all/or/none of parts of ideas may make it into the main dev build.
+
 
 ### Currently it works only with a RPI/RPI2/RPI3 using the legacy graphics driver stack ### 
 ### RPI4 with (fkms/VC4 Mesa “V3D”) will be done after RPI/RPI2/RPI3 brcm testing is complete. ###
