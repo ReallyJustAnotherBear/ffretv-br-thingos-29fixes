@@ -2,7 +2,7 @@ Part of the goal of the "thinfe" branch is to determine the minimals for ATSC OT
 Other projects such as "cmyth" exists I know, but those are very low subsets of mythtv designed for kodi.
 The ffretv project is a very exploratory project but intends to keep the core intact: eg. QT(C++/C) with ffmpeg/mysql support.
 
-embedded db exploration example.
+embedded db exploration example for a different future branch
 ```
 Another project goal is to play with mysql embedded for mythtv and see if it can be used a replacement for
 the full mysql/maria/oracle db in certain cases. Eg. Is is feasable to have it all minimized and embedded into 
