@@ -20,7 +20,7 @@ A. Random Branches are for ideas. Some all/or/none of parts of ideas may make it
  Combined with the low clock rate on the arm6 and the baggage still present in my ffretv builds, its a low performer still.
  I may have to cut RPi0/1 support completely and require a 4-core as the minimum, 
  I dont feel too bad about doing it either since the "Raspberry Pi 3 Model A+" is a serious replacement,
- though it comes in at least a 2-3x larger size package.
+ though it comes in at least a 2-3x larger size package, but it brings  a lot more performance for that.
 ```
 
 
