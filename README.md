@@ -1,6 +1,7 @@
 Part of the goal of the "thinfe" branch is to determine the minimals for ATSC OTA broadcast tv recording/playback.
 Other projects such as "cmyth" exists I know, but those are very low subsets of mythtv designed for kodi.
 The ffretv project is a very exploratory project but intends to keep the core intact: eg. QT(C++/C) with ffmpeg/mysql support.
+This branch is for frontend tuning, below is another example of a branch I plan on creating for backend embedded db testing. 
 
 embedded db exploration example for a different future branch
 ```
