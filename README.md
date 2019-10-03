@@ -15,10 +15,13 @@ A. Random Branches are for ideas. Some all/or/none of parts of ideas may make it
 ### Currently it works only with a RPI/RPI2/RPI3 using the legacy graphics driver stack ### 
 ### RPI4 with (fkms/VC4 Mesa “V3D”) will be done after RPI/RPI2/RPI3 brcm testing is complete. ###
  
- 
- *I'm working to get the RPI/0 going now, but even 720p performance is unacceptable still.
- 
- 
+ ```
+ I would like to say the RPI0 will have at least a 720p capable working example but so far it does not look good.
+ Combined with the low clock rate on the arm6 and the baggage still present in my ffretv builds, its a low performer still.
+ I may have to cut RPi0/1 support completely and require a 4-core as the minimum, I dont feel too bad about doing it either since the "Raspberry Pi 3 Model A+" is a serious replacement, yet in at least 2-3x larger size.
+```
+
+
 *Note the default output resolution is set to 720p and works well with opengl osd. If you need 1080 you may need to
 use softblend as I have seen it work better under high loads where opengl/threaded would produce jerky playback.
 So while opengl looks best with the OSD it does not work well with h264 avc @ 1080 in my testing.*
