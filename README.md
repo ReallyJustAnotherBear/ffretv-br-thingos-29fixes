@@ -6,5 +6,7 @@ embedded db exploration example.
 ```
 Another project goal is to play with mysql embedded for mythtv and see if it can be used a replacement for
 the full mysql/maria/oracle db in certain cases. Eg. Is is feasable to have it all minimized and embedded into 
-the application directly part of the QT build. The idea is; since the broadcast EIT content it is going to be limited anyway(generally a few days at best), so trim back the duration of storage to not include all of EIT history beyond a certain point, but yet do include mini reference.
+the application directly part of the QT build. The idea is; since the broadcast EIT content it is going 
+to be limited anyway(generally a few days at best), so trim back the duration of storage to not include
+all of EIT history beyond a certain point, but yet do include mini reference.
 ```
