@@ -5,7 +5,6 @@
 ################################################################################
 # Use a tag or a full commit ID
 FFRETV_VERSION = v.29fixes20201119-2
-#FFRETV_VERSION = v.29fixes20201119-1
 FFRETV_SOURCE = ffretv-$(FFRETV_VERSION).tar.gz
 FFRETV_SITE = $(call github,kelsieflynn,ffretv-br,$(FFRETV_VERSION))
 
