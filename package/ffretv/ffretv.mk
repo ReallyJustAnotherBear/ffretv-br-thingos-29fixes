@@ -4,7 +4,7 @@
 #
 ################################################################################
 # Use a tag or a full commit ID
-FFRETV_VERSION = v.29fixes20201119-3
+FFRETV_VERSION = v.29fixes20201119-3-1-g1efe19f052
 FFRETV_SOURCE = ffretv-$(FFRETV_VERSION).tar.gz
 FFRETV_SITE = $(call github,kelsieflynn,ffretv-br,$(FFRETV_VERSION))
 
@@ -23,7 +23,8 @@ endif
 FFRETV_CONF_OPTS = \
 	--prefix=/usr \
 	--compile-type=release
-FFRETV_DEPENDENCIES += host-pkgconf freetype rpi-userland qt5base qt5script qt5tools exiv2 libdvdread libhdhomerun libsamplerate libxml2 lzo taglib
+	--disable-opengl-themepainter
+FFRETV_DEPENDENCIES += host-pkgconf freetype rpi-userland qt5base qt5script qt5tools exiv2 libdvdread libhdhomerun libsamplerate libxml2 lzo taglib sdl2
 
 ifeq ($(BR2_PACKAGE_FFRETV_GPL),y)
 FFRETV_CONF_OPTS += --enable-gpl
