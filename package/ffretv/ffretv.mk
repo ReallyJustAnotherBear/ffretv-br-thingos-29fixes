@@ -368,7 +368,7 @@ endif
 #else
 #FFRETV_CONF_OPTS += --disable-libx265
 #endif
-
+#
 ifeq ($(BR2_ARM_CPU_HAS_VFPV2),y)
 FFRETV_CONF_OPTS += --enable-vfp
 else
