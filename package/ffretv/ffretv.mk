@@ -22,8 +22,7 @@ endif
 
 FFRETV_CONF_OPTS = \
 	--prefix=/usr \
-	--compile-type=release
-	--disable-opengl-themepainter
+	--compile-type=release --disable-opengl-themeplayer
 FFRETV_DEPENDENCIES += host-pkgconf freetype rpi-userland qt5base qt5script qt5tools exiv2 libdvdread libhdhomerun libsamplerate libxml2 lzo taglib sdl2
 
 ifeq ($(BR2_PACKAGE_FFRETV_GPL),y)
