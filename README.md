@@ -9,7 +9,7 @@ It's the great fun world of software develoment that even a non-pro like myself 
 
 
 Q. How do I get started using this?
-A. You could test some of the known working releases/tags.
+ A. You could test some of the known working releases/tags.
 
 
 
@@ -20,7 +20,7 @@ https://github.com/kelsieflynn/ffretv-myththangos/releases
 
 Q. You might be wondering why is this still on 29Fixes? 
 
-A. Well I do this by myself and it takes me time to move to a new release even If I wasnt very conservative about it already. It takes me a considerable amount of effort to make further changes without breaking something. Yes I am admitting this is a very fragile setup, i dont think this that statement will surprise others that have used mythtv and buildroot before either. When packages change, things break in complex systems. My customizations even made it harder to upgrade to later releases as well since automatic merges may not happen.
+ A. Well I do this by myself and it takes me time to move to a new release even If I wasnt very conservative about it already. It takes me a considerable amount of effort to make further changes without breaking something. Yes I am admitting this is a very fragile setup, i dont think this that statement will surprise others that have used mythtv and buildroot before either. When packages change, things break in complex systems. My customizations even made it harder to upgrade to later releases as well since automatic merges may not happen.
 
 
 
@@ -28,7 +28,7 @@ A. Well I do this by myself and it takes me time to move to a new release even I
 
 
 Q.Why so many branches?
-A. Random Branches are for ideas. Some all/or/none of parts of ideas may make it into the main dev build.
+ A. Random Branches are for ideas. Some all/or/none of parts of ideas may make it into the main dev build.
 
 
 
