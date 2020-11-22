@@ -35,6 +35,10 @@ https://github.com/kelsieflynn/ffretv-myththangos/releases
 
 
 
+### Q. Isnt this project AUTODEPRECATED since we are on the RPi4 now?
+
+    A. No, I think so millions of RPi2's and RPi3's are still around, and this project is still alive to serve them.
+
 ### Currently it works only with a RPI/RPI2/RPI3 using the legacy graphics driver stack ### 
 *note the original rpi can be built but you not going to be getting full framerate mythfront end going easily, needs more power.
 *The RPI2 is barely able to manage and its only because of the  hw graphics EGL that it can at all perform acceptably.
