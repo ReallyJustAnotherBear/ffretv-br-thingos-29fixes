@@ -1,7 +1,7 @@
-Whats is ffretv-myththangos?
-Whats the references to the name?
+### Whats is ffretv-myththangos?
+### Whats the references to the name?
 
-FFRETV is  a project of mine based of mythtv, thangos is a further customized project based off THingOS.
+## FFRETV is  a project of mine based of mythtv, thangos is a further customized project based off THingOS.
 
 Furthermore, mythtv is based of qt/ffmpeg/mysql, and ThingOS is based off Buildroot. I have to say, using Thingos sure helped me not re-invent the wheel. After creating this project a while back I made a small  donation to upstream dev for thingos to show my support for his continued efforts.
 
