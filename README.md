@@ -7,6 +7,9 @@ Furthermore, mythtv is based of qt/ffmpeg/mysql, and ThingOS is based off Buildr
 
 It's the great fun world of software develoment that even a non-pro like myself gets to play with.
 
+Q. How do I get started using this?
+A. You could test some of the known working releases/tags.
+https://github.com/kelsieflynn/ffretv-myththangos/releases
 
 
 Q. You might be wondering why is this still on 29Fixes? 
