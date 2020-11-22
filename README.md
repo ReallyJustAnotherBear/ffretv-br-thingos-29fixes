@@ -1,16 +1,18 @@
 Whats is ffretv-myththangos?
 Whats the references to the name?
 
-Q. Firstly you might be wondering why is this still on 29Fixes? 
-
-A. Well I do this by myself and it takes me time to move to a new release even If I wasnt very conservative about it already. It takes me a considerable amount to make further changes without breaking something. Yes I am admitting this is a very fragile setup, i dont that statement will surprise others that have used mythtv and buildroot before. When packages change, things break. My customizations even made it harder to upgrade to later releases as well since automatic merges may not happen.
-
-
 FFRETV is  a project of mine based of mythtv, thangos is a further customized project based off THingOS.
 
 Furthermore, mythtv is based of qt/ffmpeg/mysql, and ThingOS is based off Buildroot. I have to say, using Thingos sure helped me not re-invent the wheel. After creating this project a while back I made a small  donation to upstream dev for thingos to show my support for his continued efforts.
 
 It's the great fun world of software develoment that even a non-pro like myself gets to play with.
+
+
+
+Q. You might be wondering why is this still on 29Fixes? 
+
+A. Well I do this by myself and it takes me time to move to a new release even If I wasnt very conservative about it already. It takes me a considerable amount of effort to make further changes without breaking something. Yes I am admitting this is a very fragile setup, i dont think this that statement will surprise others that have used mythtv and buildroot before either. When packages change, things break in complex systems. My customizations even made it harder to upgrade to later releases as well since automatic merges may not happen.
+
 
 
 Q.Why so many branches?
