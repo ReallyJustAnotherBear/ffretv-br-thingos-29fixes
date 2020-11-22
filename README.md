@@ -14,7 +14,7 @@ A. You could test some of the known working releases/tags.
 
 
 
-     <a href>releases<https://github.com/kelsieflynn/ffretv-myththangos/releases/>
+https://github.com/kelsieflynn/ffretv-myththangos/releases
 
 
 
